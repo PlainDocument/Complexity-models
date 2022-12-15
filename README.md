@@ -7,14 +7,14 @@ Complexity estimation models
   <summary>Basic metrics</summary>
   
   
-| Name  | Explainantion | Explainantion (in russian) |
+| Name  | Explanation | Explanation (in Russian) |
 | ------------- | ------------- | ------------- |
-| N_word | Number of tokekns |количество токенов (словоформы) |
+| N_word | Number of tokens |количество токенов (словоформы) |
 | V_word | Unique tokens |количество типов (словоформы) |
 | N_lemma | Number of lemmas |количество токенов (леммы) |
 | V_lemma | Unique lemmas |количество типов (леммы) |
 | C | Number of symbols |количество знаков |
-| punct | Number of punctuation |количество пунктуационных символов |
+| punct | Number of punctuation marks |количество пунктуационных символов |
 | let | Number of letters |количество букв |
 | N | Number of numerals |количество числовых символов |
 | syl | Number of syllables |количество слогов |
@@ -23,7 +23,7 @@ Complexity estimation models
 | word_long_pr | Proportion of long words |доля длинных слов |
 | lemma_long | Number of long lemmas |количество длинных лемм |
 | lemma_long_pr | Proportion of long lemmas |доля длинных лемм |
-| comma_pr | Number of commaas |доля запятых |
+| comma_pr | Number of commas |доля запятых |
 | ASL | ASL |ASL |
 | ASS | ASS |ASS |
 | ASW | ASW |ASW |
