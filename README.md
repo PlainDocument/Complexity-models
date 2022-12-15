@@ -9,8 +9,8 @@ Complexity estimation models
   
 | Name  | Explanation | Explanation (in Russian) |
 | ------------- | ------------- | ------------- |
-| N_word | Number of tokens |количество токенов (словоформы) |
-| V_word | Unique tokens |количество типов (словоформы) |
+| N_word | Number of word forms |количество токенов (словоформы) |
+| V_word | Unique word forms |количество типов (словоформы) |
 | N_lemma | Number of lemmas |количество токенов (леммы) |
 | V_lemma | Unique lemmas |количество типов (леммы) |
 | C | Number of symbols |количество знаков |
@@ -19,25 +19,25 @@ Complexity estimation models
 | N | Number of numerals |количество числовых символов |
 | syl | Number of syllables |количество слогов |
 | sent | Number of sentences |количество предложений |
-| word_long | Number of long words |количество длинных слов |
+| word_long | Number of long words (4 or more syllables) |количество длинных слов (4 и более слога)|
 | word_long_pr | Proportion of long words |доля длинных слов |
 | lemma_long | Number of long lemmas |количество длинных лемм |
 | lemma_long_pr | Proportion of long lemmas |доля длинных лемм |
 | comma_pr | Number of commas |доля запятых |
-| ASL | ASL |ASL |
-| ASS | ASS |ASS |
-| ASW | ASW |ASW |
-| ACW | ACW |ACW |
-| L | L |L |
-| S | S |S |
+| ASL | ASL (average sentence length in words) |ASL (средняя длина предложения в словах) |
+| ASS | ASS (average sentence length in syllables) |ASS (средняя длина предложения в слогах) |
+| ASW | ASW (average word length in syllables) |ASW (средняя длина словоформы в слогах) |
+| ACW | ACW (average word length in letters) |ACW (средняя длина словоформы в буквах)|
+| L | L (average number of letters per 100 words) |L (среднее число букв на 100 словоформ) |
+| S | S (average number of sentences per 100 words) |S (среднее число предложений на 100 словоформ) |
 | TTR_word | SimpleTTR (tokens) |SimpleTTR (словоформы) |
 | TTR_lemma | SimpleTTR (lemmas) |SimpleTTR (леммы) |
 | Yule'sK_word | Yule's K (tokens) |Yule's K (словоформы) |
 | Yule'sK_lemma | Yule's K (lemmas) |Yule's K (леммы) |
 | Yule'sI_word | Yule's I (tokens) |Yule's I (словоформы) |
 | Yule'sI_lemma | Yule's I (lemmas) |Yule's I (леммы) |
-| hapax1_pr | Proportion of hapax legomena (lemmas) |доля hapax legomena (леммы) |
-| hapax2_pr | Proportion of hapax dislegomena (lemmas) |доля hapax dislegomena (леммы) |
+| hapax1_pr | Proportion of hapax legomena (lemmas) |доля гапаксов с частотой 1 (леммы) |
+| hapax2_pr | Proportion of hapax dislegomena (lemmas) |доля гапаксов с частотой 2 (леммы) |
   
 </details>
 
@@ -50,7 +50,7 @@ Complexity estimation models
 | ------------- | ------------- | ------------- |
 | FRE_GL | Adapted Flesch-Kincaid |GL = 0.5 * ASL + 8.4 * ASW – 15.59 |
 | SMOG | Adapted SMOG (Simple Measure of Gobbledygook) |SMOG = 1,1 * sqrt((float(64,6) / sent) * word_long) + 0,05 |
-| ARI | Adapted Automated readability index |ARI = 6,26 * (float(с) / N_word) + 0,2805 * (float(N_word) / sent) – 31,04 |
+| ARI | Adapted Automated Readability Index |ARI = 6,26 * (float(с) / N_word) + 0,2805 * (float(N_word) / sent) – 31,04 |
 | DCI | Dale-Chale index |DCI = 0,552 * (100,0 * word_long / N_word) + 0,273 * (N_word / sent) |
 | CLI | Coleman-Liau index |CLI = 0,055 * L – 0,35 * S – 20,33 |
 
@@ -59,7 +59,7 @@ Complexity estimation models
 
 
 <details>
-  <summary>Part of speech metrics</summary>
+  <summary>Part-of-speech metrics</summary>
 
 | Name | Formula |
 | ------------- | ------------- |
