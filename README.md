@@ -46,7 +46,7 @@ Complexity estimation models
   
   
   
-| Name  | Explainantion | Formula |
+| Name  | Explanation | Formula |
 | ------------- | ------------- | ------------- |
 | FRE_GL | Adapted Flesch-Kincaid |GL = 0.5 * ASL + 8.4 * ASW – 15.59 |
 | SMOG | Adapted SMOG (Simple Measure of Gobbledygook) |SMOG = 1,1 * sqrt((float(64,6) / sent) * word_long) + 0,05 |
