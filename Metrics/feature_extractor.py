@@ -978,7 +978,6 @@ def main():
         output_path = args.output_path,
         num_workers= args.num_workers
     )
-    print(feature_extractor.file_list)
     feature_extractor.run()
 
 
