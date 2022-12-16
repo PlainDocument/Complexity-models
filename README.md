@@ -2,15 +2,15 @@
 Complexity estimation models
 Created as part of the [Plain Document Project](https://www.plaindocument.org/)
 
+
+## Complexity metrics
 Metrics directory provides python feature extractor and necessary dictionaries
 
 ```
 python feature_extractor.py --input-path='input path name' --output-path='output file name' --num-workers=number of cpu cores
 ```
 
-
-## Complexity metrics
-
+### Metrics descriptions
 <details>
   <summary>Basic metrics</summary>
   
