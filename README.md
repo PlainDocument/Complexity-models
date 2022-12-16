@@ -1,6 +1,6 @@
 ## Models
 Complexity estimation models
-Created as part of [Plain Document Project](https://www.plaindocument.org/)
+Created as part of the [Plain Document Project](https://www.plaindocument.org/)
 
 
 ## Complexity metrics
