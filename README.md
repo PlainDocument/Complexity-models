@@ -3,7 +3,7 @@ Complexity estimation models
 Created as part of the [Plain Document Project](https://www.plaindocument.org/)
 
 
-## Complexity metrics
+## Linguistic metrics
 Metrics directory provides python feature extractor and necessary dictionaries
 
 ```
