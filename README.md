@@ -7,7 +7,7 @@ Complexity estimation models
 Metrics directory provides python feature extractor and necessary dictionaries
 
 ```
-python feature_extractor.py --input-path='input path name' --output-path='output file name' --num-workers=number of cpu cores to use #default = max
+python feature_extractor.py --input-path='input path name' --output-path='output file name' --num-workers=number of cpu cores
 ```
 
 <details>
