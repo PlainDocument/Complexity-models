@@ -944,7 +944,6 @@ class FeatureExtractor:
 
     def run(self):
         pool = Pool(processes=(self.num_workers))
-        #print(self.get_metr(self, self.file_list[0]))
         metr_list_all = list(tqdm(pool.imap(self.get_metr, self.file_list)))
         
         pool.close()
