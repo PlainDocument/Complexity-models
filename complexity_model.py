@@ -47,8 +47,7 @@ class ComplexityModel:
                 logits += model_codes.logits
                 #return encodings
                 #model_encodings += model_codes[1][-1][:,0,:] 
-        logits = [i.tolist()[0] for i in logits]
-        self.rubert_predictions = [round(i*12) if round(i*12)<13 else 12 for i in logits]
+        self.rubert_predictions = [i.tolist()[0] for i in logits]
 
     def predict_hybrid(self):
         self.predict_rubert(self)
@@ -63,7 +62,7 @@ class ComplexityModel:
             self.predictions = self.metrics_predictions
         if self.model_type == 'RUBERT':
             self.predict_rubert(self)
-            self.predictions = self.rubert_predictions
+            self.predictions = [round(i*12) if round(i*12)<13 else 12 for i in self.rubert_predictions]
         if self.model == 'hybrid':
             self.predict_hybrid(self)
             self.predictions = self.hybrid_predictions
@@ -90,7 +89,7 @@ def main():
     )
 
     parser.add_argument(
-        "--xgbhybrid-path", default="metrics_model.json", help="path to the xgboost model, trained for metrics"
+        "--xgbhybrid-path", default="hybrid_model.json", help="path to the xgboost model, trained for metrics"
     )
 
     parser.add_argument(
