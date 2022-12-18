@@ -1,6 +1,12 @@
-## Models
-Complexity estimation models
+## Complexity estimation models
 Created as part of the [Plain Document Project](https://www.plaindocument.org/)
+
+The program can be run in three modes: 
+* Metric-based classifier
+* Language model based regression model
+* Hybdrid model, combining the results from teh language model with explicit linguistic features
+
+Fine-tuned RUBERT model can be downloaded at [YandexDisk](https://disk.yandex.ru/d/QcJarV_pXWy5hA)
 
 
 ## Linguistic metrics
@@ -226,3 +232,20 @@ python feature_extractor.py --input-path='input path name' --output-path='output
   
   
 </details> 
+
+
+
+
+## Citation
+
+```bibtex
+@article{blinova2022hybrid,
+  title={A hybrid model of complexity estimation: Evidence from Russian legal texts},
+  author={Blinova, Olga and Tarasov, Nikita},
+  journal={Frontiers in Artificial Intelligence},
+  volume={5},
+  pages={248},
+  year={2022},
+  publisher={Frontiers}
+}
+```
